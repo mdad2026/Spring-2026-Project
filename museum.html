@@ -1,0 +1,78 @@
+<!doctype html> <!-- Declares this document as HTML5 so browsers render it in standards mode -->
+
+<html lang="en"> <!-- Root element of the page; lang="en" tells browsers and screen readers the language -->
+
+<head> <!-- Metadata container: information ABOUT the page, not content shown on the page -->
+    <meta charset="utf-8" /> <!-- Character encoding for readable text -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- Enables responsive layout -->
+
+    <title>HTML Template for my site</title> <!-- Page title shown in browser tab and search results -->
+
+    <link rel="stylesheet" href="/css/styles.css" /> <!-- Global stylesheet for site-wide styling -->
+    <style>
+
+    .hero-image {
+        background-image: url("/assets/AlbertDeBelleroche.png");
+
+    }
+
+    </style>
+
+    <script src="/js/includes.js" defer></script> <!-- Deferred JS for future header/footer injection -->
+</head>
+
+<body>
+
+<header id="site-header"></header>
+
+<main class="container"> <!-- Semantic role: main content unique to this page -->
+
+<div class="hero-image">
+    <h1 class="hero">Museum</h1>  
+</div>
+
+<h1>Artwork I Love</h1> <!-- Primary page heading -->
+
+<p>I try to look at a wide variety of artworks as often as I can to keep my ideas fresh. I tend to gravitate towards realism and pre-1900s work; the Renaissance and Baroque eras have been my favorite since childhood, as well Greco-Roman statuary and further sculptural works influenced by them. <br>Pictured above: Head of a Young Man (Albert de Belleroche) in Profile by John Singer Sargent, 1883.</p>
+
+<h2>Gallery</h2>
+
+<section class="museum-cards">
+
+<div class="card">
+    <img src="/assets/Dante_Gabriel_Rossetti_-_The_Day_Dream_-_Google_Art_Project.jpg" alt="The Day Dream (detail) by Dante Gabriel Rossetti, 1880" width="100%">
+    <h4>"The Day Dream" (detail) by Dante Gabriel Rossetti, 1880.</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.    
+    </p>
+</div>
+
+<div class="card">
+    <img src="/assets/Raphael, The Heads and Hands of Two Apostles (ca. 1519-20).jpg" alt="The Heads and Hands of Two Apostles by Raphael, 1519-1520" width="100%">
+    <h4>"Head of a Young Man in Profile" by John Singer Sargent, 1883</h4>
+    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+</div>
+
+<div class="card">
+    <img src="/assets/Zdzisław Beksiński, Untitled (AB80).jpg" alt="" width="100%">
+    <h4>"Untitled (AB80)" by Zdzisław Beksiński, 1980</h4>
+    <p>Donec mauris risus, viverra et imperdiet id, eleifend sit amet est. Nullam malesuada est magna, mollis pretium ante pretium non. Vestibulum aliquet, ex et ullamcorper tincidunt, odio quam rhoncus lacus, ut malesuada ipsum nibh eu mi. Nam vehicula libero a interdum fringilla. Mauris lacinia eu velit et gravida. </p>
+</div>
+
+<div class="card">
+    <img src="/assets/Undine Rising from the Fountain - Chauncey Bradley Ives.jpg" alt="" width="100%">
+    <h4>"Undine Rising from the Fountain"  Chauncey Bradley Ives, 1880-1882</h4>
+    <p>"According to medieval lore, undines were Mediterranean sea spirits who lived as soulless mortals. In the nineteenth century, this story gained prominence through Baron Heinrich Karl de la Motte Fouqué''s popular novel Undine, in which a water spirit gains a human form and soul by marrying the mortal knight she loves. 
+    <br><br>When her husband proves unfaithful, the laws of the water spirits force her to kill him. Chauncey Bradley Ives depicts the moment when the mournful Undine, cloaked in a white veil, rises like a fountain to claim her husband's life. Exquisitely rendered, the diaphanous wet drapery is a masterful example of illusionistic carving."<br><br>
+    <a href="https://artgallery.yale.edu/collections/objects/2729">On view at the Yale University Art Gallery.</a>
+    </p>
+</div>
+
+</section>
+
+</main>
+
+<footer id="site-footer" class="site-footer"></footer>
+
+</body>
+
+</html>

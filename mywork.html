@@ -1,0 +1,76 @@
+<!doctype html> <!-- Declares this document as HTML5 so browsers render it in standards mode -->
+
+<html lang="en"> <!-- Root element of the page; lang="en" tells browsers and screen readers the language -->
+
+<head> <!-- Metadata container: information ABOUT the page, not content shown on the page -->
+    <meta charset="utf-8" /> <!-- Character encoding for readable text -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- Enables responsive layout -->
+
+    <title>HTML Template for my site</title> <!-- Page title shown in browser tab and search results -->
+
+    <link rel="stylesheet" href="/css/styles.css" /> <!-- Global stylesheet for site-wide styling -->
+    <style>
+
+    .hero-image {
+        background-image: url("/assets/stephcurrycrop.png");
+
+    }
+
+    </style>
+
+    <script src="/js/includes.js" defer></script> <!-- Deferred JS for future header/footer injection -->
+</head>
+
+<body>
+
+<header id="site-header"></header>
+
+<main class="container"> <!-- Semantic role: main content unique to this page -->
+
+<div class="hero-image">
+    <h1 class="hero">My Work</h1>  
+</div>
+
+<h1>Personal Work</h1> <!-- Primary page heading -->
+
+    <p>I've been drawing since I was a kid, and it's the one hobby I've managed to stick with my whole life. I'm not the best at finishing pieces, so you'll mostly see works-in-progress here. I mainly do portraits relevant to my current interests.<br> Pictured above: Portrait of Stephen Curry, 2026.</p> <!-- Body paragraph -->          
+
+<h3>Selected Works:</h3>
+
+<section class="myworks-cards">
+
+<div class="card">
+    <img src="/assets/bron.png" alt="Portrait (detail) of LeBron James." width="100%">
+    <h5>LeBron James</h5>
+    <p>Part of a larger unfinished piece, January 2026.</p>
+</div>
+
+<div class="card">
+    <img src="/assets/catsh.png" alt="Lighting study" width="100%">
+    <h5>Lighting study</h5>
+    <p>Study of a harsh lighting source in a dark environment, September 2024.</p>
+</div>
+
+<div class="card">
+    <img src="/assets/jermacrop.png" alt="Jeremy" width="100%">
+    <h5>Jerma study</h5>
+    <p>Portrait (detail) of Twitch streamer Jerma985, March 2022.</p>
+</div>
+
+<div class="card">
+    <img src="/assets/campayne_resized.png" alt="Portrait of Cameron Payne." width="100%">
+    <h5>Cameron Payne</h5>
+    <p>Portrait of New York Knicks backup point guard Cam Payne, April 2025.</p>
+</div>
+
+</section>
+</main>
+
+<!-- SITE FOOTER Role: Contains secondary information (copyright, secondary links). Will also be extracted into an include later. -->
+<!-- Footer ID will be left on the page so JvaScript will knwo where to drop in the footer.html file -->
+
+<footer id="site-footer" class="site-footer"></footer>
+
+</body>
+
+</html>
