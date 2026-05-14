@@ -28,6 +28,7 @@
 body {
     color: white;
     font-size: 18px; 
+    padding-top: 275px;
     }
 
 .hero-image {
@@ -57,7 +58,7 @@ body {
     
 }
 
-ul.nav { 
+ul.nav-list { 
     background-color: darkred;
     border: 1px solid white;
     display: flex;
@@ -66,7 +67,8 @@ ul.nav {
     
 }
 
-ul.nav li {
+
+ul.nav-list li {
     background-color: black;
     border: 1px solid white;
     color: white;
@@ -81,21 +83,38 @@ ul.nav li {
     text-transform: uppercase;
 }
 
-ul.nav li a {
+ul.nav-list li a {
     text-decoration: none;
 }
 
-.header-container {
-    border: 0px dotted white;
-    padding: 25px;
-    text-align: center;
-    
+ul.nav-list li:hover {
+    background-color:rgb(255, 255, 255);
+    border: 1px solid black;
 }
+
+ul.nav-list li:hover a {
+    background-color:rgb(255, 255, 255);
+    color: black;
+    text-shadow: none;
+    font-style: italic;
+}
+
+.header-container {
+    position: fixed;
+    width: 100%;
+    border: 0px dotted white;
+    text-align: center;
+    padding-top:25px;
+    z-index: 1000;
+    top: 0;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0);
+}
+
 
 .logo {
     border: 0px solid white;
     font-family: Bebas Neue;
-    font-size: 60px;
+    font-size: 55px;
     text-decoration: none;
     text-shadow: 2px 3px 0px darkred;
     text-transform: uppercase;
@@ -247,14 +266,17 @@ ul.top-five-2 a:visited {
     text-shadow: 2px 3px 0px black;
     text-transform: uppercase;
     letter-spacing: 1px;
-    
-    
 }
 
 .card button a {
     text-decoration: none;
     background: none;
 }
+
+.card button a:hover {
+    text-decoration: underline;
+}
+
 
 .grid-demo {
     border: 0px solid white;
@@ -340,6 +362,15 @@ ul.top-five-2 a:visited {
     font-style: italic;
 }
 
+.museum-cards .card a:hover {
+    text-shadow: 2px 3px 0px darkred;
+    background: none;
+    font-style: italic;
+}
+
+.museum-cards .card i {
+    background: none;
+}
 .arena-cards {
     display: flex;
     align-items: flex-start;
@@ -358,9 +389,9 @@ ul.top-five-2 a:visited {
     flex-shrink: 0;
     flex-basis: auto;
     box-sizing: border-box;
-    padding:20px;
+    padding:25px;
     gap: 20px;
-    height: 650px;
+    height: 690px;
     width: 550px;
 }
 
