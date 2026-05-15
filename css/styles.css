@@ -225,6 +225,8 @@ ul.top-five-2 a:visited {
     color:gray;
 }
 
+/* Flex Demo */
+
 .flex-demo {
     display: flex;
     align-items: flex-start;
@@ -246,6 +248,8 @@ ul.top-five-2 a:visited {
     padding: 10px;
 }
 
+/* Cards */
+
 .card img {
     border-radius: 0px;
     border: 0px dotted white;
@@ -266,17 +270,21 @@ ul.top-five-2 a:visited {
     text-shadow: 2px 3px 0px black;
     text-transform: uppercase;
     letter-spacing: 1px;
+    cursor: pointer;
 }
 
 .card button a {
     text-decoration: none;
     background: none;
+    cursor: pointer;
 }
 
 .card button a:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
 
+/* Grid Demo */
 
 .grid-demo {
     border: 0px solid white;
@@ -295,6 +303,8 @@ ul.top-five-2 a:visited {
     box-sizing: border-box;
     padding:15px;
 }
+
+/* Index Cards */
 
 .index-cards {
     /* grid style */
@@ -316,6 +326,8 @@ ul.top-five-2 a:visited {
     padding: 1%;
     margin: 1%;
 }
+
+/* Museum Cards */
 
 .museum-cards {
     display: flex;
@@ -371,6 +383,9 @@ ul.top-five-2 a:visited {
 .museum-cards .card i {
     background: none;
 }
+
+/* Arena Cards */
+
 .arena-cards {
     display: flex;
     align-items: flex-start;
@@ -395,6 +410,7 @@ ul.top-five-2 a:visited {
     width: 550px;
 }
 
+/* Auditorium Cards */
 
 .auditorium-cards {
     border: 0px dotted blue;
@@ -414,6 +430,8 @@ ul.top-five-2 a:visited {
     gap: 20px;
     height: auto;
 }
+
+/* My Works Cards */
 
 .myworks-cards {
     border: 0px dotted blue;
@@ -447,4 +465,238 @@ ul.top-five-2 a:visited {
     padding-top: 15px;
     padding-bottom: 0px;
 
+}
+
+/* Form Styles */
+fieldset {
+    background-color: rgb(25, 25, 25);
+
+}
+
+form {
+    background-color: rgba(25, 25, 25);
+    width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    box-sizing: border-box;
+    
+}
+
+form input,form textarea {
+    display: block;
+    margin: 0 auto 10px auto; /* perfectly centers horizontally */
+    width: 100%; /* full width inside form */
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+form button {
+    display: block;
+    font-family: Bebas Neue;
+    font-size: 1.5em;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 10px 10px;
+    width: 200px;
+    background-color: darkred;
+    color: white;
+    border: solid 1px white;
+    cursor: pointer;
+    box-shadow: 4px 4px 4px 1px black;
+    
+}
+
+form button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+form label {
+    display: block;
+    margin-top: 10PX;
+    background-color: rgba(25, 25, 25);
+    text-decoration: none;
+    font-weight: bold;
+    padding-bottom:5px;
+}
+
+input:focus,textarea:focus {
+    outline: none;
+    border-color: white;
+    border-width: 3px;
+}
+
+input::placeholder {
+    opacity: 0.5;
+}
+
+textarea::placeholder {
+    opacity: 0.5;
+}
+
+form legend {
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 25px;
+}
+
+form p {
+    font-size: 21px;
+    margin: auto;
+    margin-left: -9px;
+    font-weight: bold;
+}
+
+/* CHECKBOX: Customize the label (the container) */
+.checkbox-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: normal;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkbox-container .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: white;
+}
+
+/* On mouse-over, add a grey background color */
+.checkbox-container:hover input ~ .checkmark {
+    background-color: grey;
+}
+
+/* When the checkbox is checked, add a background */
+.checkbox-container input:checked ~ .checkmark {
+    background-color: darkred;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkbox-container .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox-container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* Radio Button */
+/* Customize the label (the container) */
+.radiobutton-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: normal;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.radiobutton-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom radio button */
+.radiobutton-container .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.radiobutton-container:hover input ~ .checkmark {
+    background-color: grey;
+}
+
+/* When the radio button is checked, add a blue background */
+.radiobutton-container input:checked ~ .checkmark {
+    background-color: darkred;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.radiobutton-container .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radiobutton-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radiobutton-container .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+/* Dropdown */
+
+.sitediscovery-container select {
+    width: 100%; 
+    max-width: 350px;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+select:focus {
+    outline: none;
 }
