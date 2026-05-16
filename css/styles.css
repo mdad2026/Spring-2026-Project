@@ -67,7 +67,7 @@ body {
     top: 0;
     z-index: 99;
     background-color: darkred;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 1);    
     padding: 10px 20px;
     box-sizing: border-box;
     display: flex;
@@ -124,7 +124,7 @@ ul.nav-list li:hover a {
 main.container {
     border: 1px solid darkred;
     margin: auto;
-    width: 60%;
+    width: 1250px;
 }
 
 
@@ -492,9 +492,7 @@ form textarea {
     display: block;
     background-color: black;
     margin: 0 auto 10px auto;
-    /* perfectly centers horizontally */
     width: 100%;
-    /* full width inside form */
     font-size: 20px;
     box-sizing: border-box;
 }
@@ -539,11 +537,11 @@ textarea:focus {
 }
 
 input::placeholder {
-    opacity: 0.5;
+    opacity: 0.7;
 }
 
 textarea::placeholder {
-    opacity: 0.5;
+    opacity: 0.7;
 }
 
 form legend {
@@ -582,7 +580,6 @@ form p {
     width: 0;
 }
 
-/* Create a custom checkbox */
 .checkbox-container .checkmark {
     position: absolute;
     top: 0;
@@ -592,29 +589,24 @@ form p {
     background-color: white;
 }
 
-/* On mouse-over, add a grey background color */
 .checkbox-container:hover input~.checkmark {
     background-color: grey;
 }
 
-/* When the checkbox is checked, add a background */
 .checkbox-container input:checked~.checkmark {
     background-color: darkred;
 }
 
-/* Create the checkmark/indicator (hidden when not checked) */
 .checkbox-container .checkmark:after {
     content: "";
     position: absolute;
     display: none;
 }
 
-/* Show the checkmark when checked */
 .checkbox-container input:checked~.checkmark:after {
     display: block;
 }
 
-/* Style the checkmark/indicator */
 .checkbox-container .checkmark:after {
     left: 9px;
     top: 5px;
@@ -628,7 +620,6 @@ form p {
 }
 
 /* Radio Button */
-/* Customize the label (the container) */
 .radiobutton-container {
     display: block;
     position: relative;
@@ -643,7 +634,6 @@ form p {
     user-select: none;
 }
 
-/* Hide the browser's default radio button */
 .radiobutton-container input {
     position: absolute;
     opacity: 0;
@@ -652,7 +642,6 @@ form p {
     width: 0;
 }
 
-/* Create a custom radio button */
 .radiobutton-container .checkmark {
     position: absolute;
     top: 0;
@@ -663,29 +652,24 @@ form p {
     border-radius: 50%;
 }
 
-/* On mouse-over, add a grey background color */
 .radiobutton-container:hover input~.checkmark {
     background-color: grey;
 }
 
-/* When the radio button is checked, add a blue background */
 .radiobutton-container input:checked~.checkmark {
     background-color: darkred;
 }
 
-/* Create the indicator (the dot/circle - hidden when not checked) */
 .radiobutton-container .checkmark:after {
     content: "";
     position: absolute;
     display: none;
 }
 
-/* Show the indicator (dot/circle) when checked */
 .radiobutton-container input:checked~.checkmark:after {
     display: block;
 }
 
-/* Style the indicator (dot/circle) */
 .radiobutton-container .checkmark:after {
     top: 9px;
     left: 9px;
@@ -713,7 +697,6 @@ select:focus {
 }
 
 /* HAMBURGER BUTTON START */
-/* Hide the checkbox */
 #nav-toggle {
     display: none;
 }
@@ -739,17 +722,13 @@ select:focus {
 
 /* X state: when checkbox is checked */
 
-/* Rotate top line down */
 #nav-toggle:checked~.hamburger span:nth-child(1) {
     transform: translateY(9.5px) rotate(45deg);
 }
 
-/* Hide middle line*/
 #nav-toggle:checked~.hamburger span:nth-child(2) {
     transform: scaleX(0);
 }
-
-/* Rotate bottom up*/
 
 #nav-toggle:checked~.hamburger span:nth-child(3) {
     transform: translateY(-9.5px) rotate(-45deg);
@@ -830,6 +809,4 @@ select:focus {
         display: block;
         padding: 10px 20px;
     }
-}
-
-/* HAMBURGER BUTTON END */
+} 
